@@ -1,8 +1,11 @@
+<!DOCTYPE html>
 <html>
   <head>
-    <title>COSC4806 Assignment01</title>
+    <title>Shuming Lin</title>
   </head>
   <body>
-    <?php echo '<p>Hello, Welcome COSC4806 </p>'; ?> 
-
+    <h1>COSC4806 - Assignment1</h1>
+  
+    <p></p><a href="./login.php">Click Here to Login</a></p>
+  </body>
 </html>
