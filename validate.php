@@ -11,10 +11,10 @@
   $password = $_REQUEST['password'];
 
   // If the username and password are correct then take them to index.php and display their username (welcome, NAME) with the current date (formatted in a readable way)
-  
   // If they log in successfully, set a session variable 'authenticated' to true (or 1)
   if ($valid_username == $username && $valid_password == $password ) {
     
+    $_SESSION['authenticated'] = 1;
     header ('location: /');
     
   } else {
