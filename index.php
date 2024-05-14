@@ -6,6 +6,6 @@
   <body>
     <h1>COSC4806 - Assignment1</h1>
   
-    <p></p><a href="./login.php">Click Here to Login</a></p>
+    <p><a href="./login.php">Click Here to Login</a></p>
   </body>
 </html>
