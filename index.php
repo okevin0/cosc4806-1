@@ -1,3 +1,7 @@
+<?php 
+ session_start();
+?>
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -6,6 +10,6 @@
   <body>
     <h1>COSC4806 - Assignment1</h1>
   
-    <p><a href="./login.php">Click Here to Login</a></p>
+    <p>Welcome, <?php echo $_SESSION['username'] . " and today is " . date("Y-m-d H:i:s"); ?></p>
   </body>
 </html>

@@ -1,6 +1,6 @@
 <?php
   // Create a login.php page that has a basic login form (username, password, submit)
-  //The goal is to have a functional login form. You can hardcode username and password
+ session_start();
 ?>
 <!DOCTYPE html>
 <html>
