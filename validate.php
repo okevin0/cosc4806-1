@@ -26,7 +26,9 @@
       $_SESSION['failed_attempts'] = $_SESSION['failed_attempts'] + 1;
     }
 
-    echo "This is unsuccessful attempt number: " . $_SESSION['failed_attempts'];
-    
+    // redirect to login page and prin the number of failed attempts
+    // echo "This is unsuccessful attempt number: " . $_SESSION['failed_attempts'];
+    header('location: /login.php');
+        
   }
 ?>
