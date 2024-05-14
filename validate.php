@@ -1,5 +1,6 @@
 <?php
-  // Implement session variables and for every failed login attempt, keep track of it in a session variable
+
+  session_start();
 
   // If the username and password are correct then take them to index.php and display their username (welcome, NAME) with the current date (formatted in a readable way)
 
@@ -12,8 +13,18 @@
   $password = $_REQUEST['password'];
 
   if ($valid_username == $username && $valid_password == $password ) {
+    
     echo "success";
+    
   } else {
-    echo "failed";
+    // Implement session variables and for every failed login attempt, keep track of it in a session variable
+    if(!isset($_SESSION['failed_attempts'])){
+      $_SESSION['failed_attempts'] = 1;
+    } else {
+      $_SESSION['failed_attempts'] = $_SESSION['failed_attempts'] + 1;
+    }
+
+    echo "This is unsuccessful attempt number: " . $_SESSION['failed_attempts'];
+    
   }
 ?>
