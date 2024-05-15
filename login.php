@@ -1,7 +1,6 @@
 <?php
   // Create a login.php page that has a basic login form (username, password, submit)
  session_start();
-
 ?>
 <!DOCTYPE html>
 <html>
@@ -12,7 +11,7 @@
     <h1>Login Form</h1>
     <?php
       // only print when user fail to login
-      if($_SESSION['failed_attempts'] > 0 ) {
+      if(isset($_SESSION['failed_attempts']) && $_SESSION['failed_attempts'] > 0 ) {
         echo "This is unsuccessful attempt number: " . $_SESSION['failed_attempts'] . "<br><br>";
       }
     ?>
